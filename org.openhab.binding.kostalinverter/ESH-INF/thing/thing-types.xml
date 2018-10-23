@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="kostalinverter"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+    xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+    <thing-type id="kostalinverter">
+        <label>Kostal Inverter</label>
+        <description>Kostal Inverter</description>
+        <channels>
+          <channel typeId="dxsEntries_0" id="dxsEntries_0" ></channel>
+          <channel typeId="dxsEntries_1" id="dxsEntries_1" ></channel>
+          <channel typeId="dxsEntries_2" id="dxsEntries_2" ></channel>
+          <channel typeId="dxsEntries_3" id="dxsEntries_3" ></channel>
+          <channel typeId="dxsEntries_4" id="dxsEntries_4" ></channel>
+          <channel typeId="dxsEntries_5" id="dxsEntries_5" ></channel>
+          <channel typeId="dxsEntries_6" id="dxsEntries_6" ></channel>
+          <channel typeId="dxsEntries_7" id="dxsEntries_7" ></channel>
+          <channel typeId="dxsEntries_8" id="dxsEntries_8" ></channel>
+          <channel typeId="dxsEntries_9" id="dxsEntries_9" ></channel>
+          <channel typeId="dxsEntries_10" id="dxsEntries_10" ></channel>
+          <channel typeId="dxsEntries_11" id="dxsEntries_11" ></channel>
+          <channel typeId="dxsEntries_12" id="dxsEntries_12" ></channel>
+          <channel typeId="dxsEntries_13" id="dxsEntries_13" ></channel>
+          <channel typeId="dxsEntries_14" id="dxsEntries_14" ></channel>
+          <channel typeId="dxsEntries_15" id="dxsEntries_15" ></channel>
+          <channel typeId="dxsEntries_16" id="dxsEntries_16" ></channel>
+          <channel typeId="dxsEntries_17" id="dxsEntries_17" ></channel>
+          <channel typeId="dxsEntries_18" id="dxsEntries_18" ></channel>
+          <channel typeId="dxsEntries_19" id="dxsEntries_19" ></channel>
+          <channel typeId="dxsEntries_20" id="dxsEntries_20" ></channel>
+          <channel typeId="dxsEntries_21" id="dxsEntries_21" ></channel>
+          <channel typeId="dxsEntries_22" id="dxsEntries_22" ></channel>
+          
+        </channels>
+
+        <config-description>
+            <parameter name="url" type="text" required="true">
+                <label>URL</label>
+                <description>URL of the web interface (e.g. http://192.168.0.1)</description>
+                <default></default>
+            </parameter>
+            
+            <parameter name="userName" type="text" required="true">
+                <label>Username</label>
+                <default>pvserver</default>
+            </parameter>
+            
+            <parameter name="password" type="text" required="true">
+                <label>Password</label>
+                <default>pvwr</default>
+            </parameter>
+
+            <parameter name="refreshInterval" type="integer">
+                <label>Refresh Interval</label>
+                <description>States how often a refresh shall occur (in ms)</description>
+                <default>60</default>
+            </parameter>
+            
+            <parameter name="type" type="text" required="true">
+                <label>Type of Inverter</label>
+                <description>Depends on type of inverter</description>
+                <default>new_generation</default>
+            </parameter> 
+            
+            <parameter name="dxsEntries_ChannelCfgFile" type="text">
+                <label>dxsEntries_/Channel Configuration file</label>
+                <description>Path and name of file</description>
+                <default>60</default>
+            </parameter>   
+                
+        </config-description>
+
+    </thing-type>
+    
+    <channel-type id="dxsEntries_0">
+        <item-type>Number</item-type>
+        <label>dxsEntries_0</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_1">
+        <item-type>Number</item-type>
+        <label>dxsEntries_1</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_2">
+        <item-type>Number</item-type>
+        <label>dxsEntries_2</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+        
+    <channel-type id="dxsEntries_3">
+        <item-type>Number</item-type>
+        <label>dxsEntries_3</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_4">
+        <item-type>Number</item-type>
+        <label>dxsEntries_4</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_5">
+        <item-type>Number</item-type>
+        <label>dxsEntries_5</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_6">
+        <item-type>Number</item-type>
+        <label>dxsEntries_6</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_7">
+        <item-type>Number</item-type>
+        <label>dxsEntries_7</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_8">
+        <item-type>Number</item-type>
+        <label>dxsEntries_8</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+        
+    <channel-type id="dxsEntries_9">
+        <item-type>Number</item-type>
+        <label>dxsEntries_9</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_10">
+        <item-type>Number</item-type>
+        <label>dxsEntries_10</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_11">
+        <item-type>Number</item-type>
+        <label>dxsEntries_11</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_12">
+        <item-type>Number</item-type>
+        <label>dxsEntries_12</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_13">
+        <item-type>Number</item-type>
+        <label>dxsEntries_13</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_14">
+        <item-type>Number</item-type>
+        <label>dxsEntries_14</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_15">
+        <item-type>Number</item-type>
+        <label>dxsEntries_15</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_16">
+        <item-type>Number</item-type>
+        <label>dxsEntries_16</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_17">
+        <item-type>Number</item-type>
+        <label>dxsEntries_17</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_18">
+        <item-type>Number</item-type>
+        <label>dxsEntries_18</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_19">
+        <item-type>Number</item-type>
+        <label>dxsEntries_19</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_20">
+        <item-type>Number</item-type>
+        <label>dxsEntries_20</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+    <channel-type id="dxsEntries_21">
+        <item-type>Number</item-type>
+        <label>dxsEntries_21</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+            
+    <channel-type id="dxsEntries_22">
+        <item-type>Number</item-type>
+        <label>dxsEntries_22</label>
+        <category>Energy</category>
+        <state readOnly="true" pattern="%.2f" />
+    </channel-type>
+    
+</thing:thing-descriptions>
